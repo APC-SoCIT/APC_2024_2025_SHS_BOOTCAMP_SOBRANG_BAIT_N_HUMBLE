@@ -1,0 +1,11 @@
+__pycache__/
+
+
+venv/
+*.local
+
+*.json
+
+*.log
+
+*.env
