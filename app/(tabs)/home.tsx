@@ -10,7 +10,7 @@ const { width, height } = Dimensions.get('window');
 
 export default function HomeScreen() {
   const router = useRouter();
-  const { user, token } = useAuth(); // ✅ No need to read token here
+  const { user, token } = useAuth(); 
 
   const [lightStates, setLightStates] = useState<any>({});
   const [loading, setLoading] = useState<boolean>(false);
@@ -79,7 +79,7 @@ export default function HomeScreen() {
 
     const intervalId = setInterval(() => {
       fetchLightStatus();
-    }, 10000);
+    }, 300000);
 
   // Clean up interval on unmount
     return () => clearInterval(intervalId);
